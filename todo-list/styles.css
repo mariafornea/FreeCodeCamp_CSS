@@ -1,0 +1,53 @@
+body {
+  background-color: #F5F3E7;
+}
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #2E452A;
+}
+.todo-list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  line-height: 2.5;
+  font-family: arial;
+}
+.todo-list > li {
+  background-color: #8BCF7A;
+  border: 2px solid #8BCF7A;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.todo-list > li > ul {
+    text-align: center;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: -15%;
+}
+a:link {
+  color:#2E452A;
+}
+a:visited {
+  color: #355C7D;
+}
+a:hover {
+  color: #355C7D;
+  border: 2px solid #355C7D;
+}
+a:focus {
+  color: #355C7D;
+  outline: 2px solid #355C7D;
+}
+a:active {
+  color: white;
+  background-color: #355C7D;
+}
+.sub-item {
+  list-style: none;
+}
