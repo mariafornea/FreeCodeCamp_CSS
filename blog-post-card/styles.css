@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(
+        to left,
+        #F7E7E2,
+        #F3D0C8,
+        #D48879
+    );
+}
+.post-img {
+  width: 100%;
+  margin: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+  border-bottom: 4px solid #D48879;
+}
+.blog-post-card {
+  background: white;
+  border-radius: 20px;
+  width: 70%;
+  max-width: 500px;
+  margin: 5% auto;
+  text-align: left;
+}
+.post-content {
+  padding: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+.post-title {
+  font-family: Garamond, serif;
+  margin: -5px;
+}
+.post-excerpt {
+  font-family: Georgia, serif;
+  font-size: 16px;
+}
+.read-more {
+  border: 2px solid #D48879;
+  border-radius: 10px;
+  background-color: #F3D0C8;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: 150px;
+  padding: 8px 16px;
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 18px;
+}
+.read-more:hover {
+  background: white;
+  transform: scale(1.05);
+}
+.read-more:focus {
+    outline: 3px solid #D48879;
+}
