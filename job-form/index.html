@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Job Application Form</h1>
+  <div class="container">
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name: </label>
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="E.g., Alex Steavens"
+            required
+        />
+        <label for="email">E-mail: </label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E.g., someemail@gmail.com"
+            required
+        />
+        <label for="position">Position: </label>
+        <select name="position" id="position">
+            <option value="software-engineer">Software Engineer</option>
+            <option value="web-developer">Web Developer</option>
+            <option value="data-scientist">Data Scientist</option>
+            <option value="systems-analyst">Systems Analyst</option>
+            <option value="manager">Manager</option>
+        </select>
+      </fieldset>
+      <fieldset class="radio-group">
+        <legend>Availability</legend>
+        <input 
+            class="radio-btn"
+            type="radio"
+            name="availability"
+            id="full-time"
+            checked
+        />
+        <label for="full-time" class="availability">Full-Time </label>
+        <input 
+            class="radio-btn"
+            type="radio"
+            name="availability"
+            id="part-time"
+        />
+        <label for="part-time" class="availability">Part-Time </label>
+      </fieldset>
+      <label for="message">Why do you want to work for our company?</label>
+      <textarea id="message" name="reasons-for-employment" rows="5" cols="50"></textarea>   
+      <button type="submit">Submit Form</button> 
+    </form>
+  </div>
+</body>
+</html>

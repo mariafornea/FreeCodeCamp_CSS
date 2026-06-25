@@ -1,0 +1,113 @@
+body {
+  background-color: #262626;
+  color: whitesmoke;
+  font-family: Arial;
+}
+
+.container {
+  background-color: #8a8a8a;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  box-shadow: 0 5px 15px black;  
+}
+
+
+textarea {
+  max-width: 90%;
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid #262626;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+label:not(.availability) {
+  display: block;
+  margin: 10px 0;
+}
+
+input:not(.radio-btn),
+textarea {
+  width: 95%;
+  border-radius: 5px;
+  padding: 10px;
+}
+legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+:is(input:not(.radio-btn), textarea):focus {
+  outline: 2px solid whitesmoke;
+}
+
+
+:is(input:not(.radio-btn), select, textarea):invalid {
+  border: 2px solid red;
+}
+
+:is(input:not(.radio-btn), select, textarea):valid {
+  border: 2px solid green;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #262626;
+  color: whitesmoke;
+  padding: 10px 20px;
+  width: 50%;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  
+}
+
+button:hover {
+  background-color: #8a8a8a;
+  transition: background-color 0.4s ease;
+}
+
+.radio-btn {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #262626;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+
+.radio-btn::before {
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px, 3px) scale(0);
+  transition: all 0.3s ease-in;
+}
+.radio-btn:checked::before {
+  transform: translate(2px, 2px) scale(1);
+  background-color: #262626;
+  box-shadow: 0 0 0 0.1em #999;
+  border: 2px solid whitesmoke;
+}
+
+.radio-btn:checked + label {
+  color: #262626;
+}
+
+input:not(.radio-btn):first-of-type {
+  border-radius: 5px;
+}
