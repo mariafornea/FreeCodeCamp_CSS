@@ -1,0 +1,31 @@
+body {
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+.color-grid {
+    display: flex;
+    justify-content: space-evenly;
+}
+.color-box {
+  width: 100px;
+  height: 100px;
+}
+
+.color1 {
+  background-color: #79d491;
+}
+.color2 {
+  background-color: rgb(242, 174, 65);
+}
+.color3 {
+  background-color: purple;
+}
+.color4 {
+  background-color: hsl(214, 46%, 71%);
+}
+.color5 {
+  background: linear-gradient(teal, aqua, teal);
+}
