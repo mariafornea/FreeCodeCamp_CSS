@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <form>
+        <h2>Contact Us</h2>
+        <label for="name">Enter Your Name: 
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="E.g., Tabita Morrison"
+            required
+          />
+        </label>
+        <label for="email">Enter Your Email: 
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="someemail@gmail.com"
+            required
+          />
+        </label>
+        <label for="message">How can we help you? 
+          <textarea 
+            id="message" 
+            name="message"
+            placeholder="For example: I cannot log into my account."
+            rows="4"
+            cols="30"
+            required
+          ></textarea>
+        </label>
+        <button type="submit" name="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
