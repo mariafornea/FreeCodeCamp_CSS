@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f7f3;
+}
+
+.feature-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", serif;
+}
+.feature-card {
+  display: block;
+  position: relative;
+  width: auto;
+  min-width: 0;
+  padding: 2rem;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  background-color: #8b5a2b;
+  color: whitesmoke;
+  transform: scale(1.03);
+
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.08),
+    0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card input {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.feature-card:has(input:checked) {
+    background-color: #8b5a2b;
+    color: whitesmoke;
+    border-color: #8b5a2b;
+    box-shadow: 0 10px 24px rgba(139, 90, 43, 0.3);
+}
+
+.title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  display: block;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #8b5a2b;
+  border-radius: 4px;
+  background: white;
+  transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background: #8b5a2b;
+  border-color: #8b5a2b;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 20px;
+}
