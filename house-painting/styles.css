@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+#house {
+  position: relative;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  background-color: beige;
+  border: 2px solid beige;
+}
+
+#roof {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  border: 3px solid brown;
+  background: linear-gradient(#a52a2a 10%, #8b2323 100%);
+}
+
+#chimney {
+  position: absolute;
+  top: -70px;
+  left: 370px;
+  width: 50px;
+  height: 70px;
+  border: 2px solid chocolate;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  background-color: #ee7621;
+  z-index: -1;
+}
+
+.chimney-line-vertical-1, 
+.chimney-line-vertical-2 {
+  position: absolute;
+  width: 49px;
+  height: 2px;
+  background: chocolate;
+}
+
+.chimney-line-vertical-1 {
+  top: 20px;
+}
+
+.chimney-line-vertical-2 {
+  top: 45px;
+}
+
+.chimney-line-horizontal-1,
+.chimney-line-horizontal-2 {
+  position: absolute;
+  width: 69px;
+  height: 1.2px;
+  background: brown;
+  transform: rotate(90deg);
+}
+
+.chimney-line-horizontal-1 {
+  top: 33px;
+  left: -20px;
+}
+
+.chimney-line-horizontal-2 {
+  top: 33px;
+  left: -2px;
+}
+
+
+#window-1, #window-2 {
+  position: absolute;
+  top: 150px;
+  width: 110px;
+  height: 150px;
+  border: 5px solid brown;
+  background: linear-gradient(white 20%, cyan 100%);
+}
+
+#window-1 {
+  left: 30px;
+}
+
+#window-2 {
+  right: 30px;
+}
+
+.window-1-center-line,
+.window-2-center-line {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: brown;
+  top: 58px;
+}
+
+.w1-tl-1, 
+.w1-tl-2,
+.w2-tl-1,
+.w2-tl-2 {
+  position: absolute;
+  width: 3px;
+  height: 58px;
+  background-color: brown;
+}
+
+.w1-tl-1,
+.w1-bl-1,
+.w2-tl-1,
+.w2-bl-1 {
+  left: 30px;
+}
+
+.w1-tl-2,
+.w1-bl-2,
+.w2-tl-2,
+.w2-bl-2 {
+  left: 65px;
+}
+
+.w1-tl-3,
+.w1-bl-3,
+.w2-tl-3,
+.w2-bl-3 {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: brown;
+}
+
+.w1-tl-3,
+.w2-tl-3 {
+  top: 30px;
+}
+
+.w1-bl-1,
+.w1-bl-2,
+.w2-bl-1,
+.w2-bl-2 {
+  position: absolute;
+  height: 80px;
+  width: 3px;
+  background-color:brown;
+  top: 60px;
+}
+
+.w1-bl-3,
+.w2-bl-3 {
+  top: 100px;
+}
+
+
+#door {
+  position: absolute;
+  width: 130px;
+  height: 200px;
+  border: 2px solid brown;
+  bottom: 0;
+  left: 37%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: linear-gradient(#cd3333 20%, brown 100%);
+}
+
+.door-window {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 5px solid brown;
+  background: linear-gradient(white 20%, cyan 100%);
+  border-radius: 50%;
+  top: 30px;
+  left: 23px;
+}
+
+.door-window-line1,
+.door-window-line2 {
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background-color: brown;
+}
+
+.door-window-line1 {
+  top: 32px;
+}
+
+.door-window-line2 {
+  transform: rotate(90deg);
+  top: 32px;
+}
+
+.door-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(yellow 10%, orange 100%);
+  border-radius: 50%;
+  top: 60%;
+  right: 5px;
+}
